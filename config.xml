@@ -9,6 +9,11 @@
         buscamapas.com - Rutas de Senderismo (Hiking Trails)
     </author>
 
+     <content src="index.html" />
+    
+    <icon src="res/icon.png" />
+    <gap:splash src="res/splash.png" />
+
     
     <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="default" />
