@@ -70,7 +70,7 @@
      
      <gap:plugin name="com.adobe.plugins.gaplugin" />
      
-     <gap:plugin name="com.rjfun.cordova.plugin.admob"/>
+     <gap:plugin name="com.rjfun.cordova.plugin.admob" source="plugins.cordova.io"/>
      
     <access origin="*" />
 </widget>
