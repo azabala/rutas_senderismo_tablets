@@ -199,8 +199,8 @@ function pagebeforecreate(){
 					return;
 		    	 }, 
 		    	 { 
-		    	   maximumAge: 15000, 
-		    	   timeout: 15000, 
+		    	   maximumAge: 40000, 
+		    	   timeout: 40000, 
 		    	   enableHighAccuracy:false
 		    	 } 
 		 );
