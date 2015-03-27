@@ -755,7 +755,7 @@ function mapsAroundResults(){
 	             }, 
 		    	 { 
 			    	maximumAge: 15000, 
-			    	timeout: 10000, 
+			    	timeout: 15000, 
 			    	enableHighAccuracy:false
 			      }
 	     );//getCurrentPosition
