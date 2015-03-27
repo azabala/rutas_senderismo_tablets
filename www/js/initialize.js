@@ -756,7 +756,7 @@ function mapsAroundResults(){
 		    	 { 
 			    	maximumAge: 15000, 
 			    	timeout: 15000, 
-			    	enableHighAccuracy:false
+			    	enableHighAccuracy:true
 			      }
 	     );//getCurrentPosition
 	}else{
