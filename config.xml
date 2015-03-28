@@ -45,10 +45,7 @@
     <feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="http://api.phonegap.com/1.0/file-transfer" />
     
-    <gap:config-file platform="android" parent="/manifest">
-    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
-    </gap:config-file>
- 	 
+     
  	 <feature name="FileOpener2">
          <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2" />
       </feature>
@@ -73,6 +70,10 @@
          <param name="android-package" value="com.rjfun.cordova.plugin.AdMob"/>
       </feature>
       
+     <gap:config-file platform="android" parent="/manifest">
+    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
+    </gap:config-file>
+      
  	 	
  	 <gap:plugin name="org.apache.cordova.file" />
      <gap:plugin name="org.apache.cordova.file-transfer" />
@@ -86,6 +87,11 @@
      <gap:plugin name="com.adobe.plugins.gaplugin" />
      
      <gap:plugin name="com.rjfun.cordova.plugin.admob" source="plugins.cordova.io"/>
+     
+     <gap:config-file platform="android" parent="/manifest">
+    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
+    </gap:config-file>
+      
      
     <access origin="*" />
 </widget>
