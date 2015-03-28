@@ -36,7 +36,8 @@
     <preference name="android-minSdkVersion" value="11" />
     <preference name="android-targetSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
-    <preference name="permissions" value="none" />
+    
+    <!--<preference name="permissions" value="none" />-->
 
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
@@ -89,7 +90,11 @@
      <gap:plugin name="com.rjfun.cordova.plugin.admob" source="plugins.cordova.io"/>
      
      <gap:config-file platform="android" parent="/manifest" mode="add">
+     	<uses-permission android:name="android.permission.INTERNET" />
     	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     </gap:config-file>
       
      
