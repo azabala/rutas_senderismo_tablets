@@ -88,7 +88,7 @@
      
      <gap:plugin name="com.rjfun.cordova.plugin.admob" source="plugins.cordova.io"/>
      
-     <gap:config-file platform="android" parent="/manifest" mode="merge">
+     <gap:config-file platform="android" parent="/manifest" mode="add">
     	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
     </gap:config-file>
       
