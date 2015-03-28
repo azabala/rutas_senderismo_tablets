@@ -1,5 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.buscamapas.rutas_senderismo_tablets" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.buscamapas.rutas_senderismo_tablets" 
+		version="1.0.0" 
+		xmlns="http://www.w3.org/ns/widgets" 
+		xmlns:gap="http://phonegap.com/ns/1.0"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+>
     <name>Rutas Senderismo Tablets</name>
     <description>
 	Versión de la aplicación 'Rutas Senderismo' optimizada para tablets. Permite buscar y descargar rutas a usuarios de dispositivos que no tienen GPS.
@@ -9,7 +14,7 @@
         buscamapas.com - Rutas de Senderismo (Hiking Trails)
     </author>
 
-     <content src="index.html" />
+    <content src="index.html" />
     
     <icon src="res/icon.png" />
     <gap:splash src="res/splash.png" />
@@ -35,12 +40,14 @@
 
     <preference name="SplashScreen" value="screen" />
     <preference name="SplashScreenDelay" value="3000" />
-
+    
      
     <feature name="http://api.phonegap.com/1.0/file"/>
     <feature name="http://api.phonegap.com/1.0/file-transfer" />
     
-    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <gap:config-file platform="android" parent="/manifest">
+    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
+    </gap:config-file>
  	 
  	 <feature name="FileOpener2">
          <param name="android-package" value="io.github.pwlin.cordova.plugins.fileopener2.FileOpener2" />
@@ -69,8 +76,6 @@
  	 	
  	 <gap:plugin name="org.apache.cordova.file" />
      <gap:plugin name="org.apache.cordova.file-transfer" />
-     
-     <gap:plugin name="org.apache.cordova.geolocation" />
      
      <gap:plugin name="org.apache.cordova.splashscreen" version="0.1.0" />
      
