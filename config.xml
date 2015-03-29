@@ -18,7 +18,15 @@
     
     <icon src="res/icon.png" />
     <gap:splash src="res/splash.png" />
-
+    
+    <gap:splash src="res/ldpi.png" gap:platform="android" gap:density="ldpi"  width="200" height="320" />
+	<gap:splash src="res/hdpi.png" gap:platform="android" gap:density="hdpi"  width="480" height="800" />
+	<gap:splash src="res/xhdpi.png" gap:platform="android" gap:density="xhdpi" width="720" height="1280" />
+	
+	<gap:splash src="res/land-ldpi.png" gap:platform="android" gap:density="ldpi"  width="320" height="200" />
+	<gap:splash src="res/land-hdpi.png" gap:platform="android" gap:density="hdpi"  width="800" height="480" />
+	<gap:splash src="res/land-xhdpi.png" gap:platform="android" gap:density="xhdpi" width="1280" height="720" />
+	
     
     <preference name="phonegap-version" value="3.7.0" />
     <preference name="orientation" value="default" />
@@ -71,11 +79,7 @@
          <param name="android-package" value="com.rjfun.cordova.plugin.AdMob"/>
       </feature>
       
-     <gap:config-file platform="android" parent="/manifest">
-    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
-    </gap:config-file>
-      
- 	 	
+    	
  	 <gap:plugin name="org.apache.cordova.file" />
      <gap:plugin name="org.apache.cordova.file-transfer" />
   <!-- 
