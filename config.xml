@@ -78,7 +78,9 @@
  	 	
  	 <gap:plugin name="org.apache.cordova.file" />
      <gap:plugin name="org.apache.cordova.file-transfer" />
+  <!-- 
       <gap:plugin name="org.apache.cordova.geolocation" />
+  -->
      <gap:plugin name="org.apache.cordova.splashscreen" version="0.1.0" />
      
      <gap:plugin name="io.github.pwlin.cordova.plugins.fileopener2" version="1.0.8" />
@@ -91,7 +93,8 @@
      
      <gap:config-file platform="android" parent="/manifest" mode="add">
      	<uses-permission android:name="android.permission.INTERNET" />
-    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION"></uses-permission>
+    	<uses-permission android:name="android.permisssion.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
