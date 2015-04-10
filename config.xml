@@ -82,6 +82,8 @@
     <gap:plugin name="org.apache.cordova.inappbrowser" />
     <gap:plugin name="com.adobe.plugins.gaplugin" />
     <gap:plugin name="com.rjfun.cordova.plugin.admob" source="plugins.cordova.io"/>
+    
+    <gap:plugin name="net.tunts.webintent" version="0.2.1" />
 
     <access origin="*" />
 </widget>

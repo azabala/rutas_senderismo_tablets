@@ -134,7 +134,7 @@ function initAd(){
 }
 
 function shareOnWhatsapp(){
-	alert("paso por aquí");
+	/*
 	gaPlugin.trackEvent( sucessHandler, errorHandler, "Button", "Click", "whatsapp_mapa", 1);
 	var msg = takeAlookAt +" http://www.buscamapas.com/mapas/"+GEO_TABLE+"/"+data.friendly_url;
     var msgurl = encodeURIComponent(msg);
@@ -143,8 +143,37 @@ function shareOnWhatsapp(){
     }catch(e){
     	alert(e.message);
     }
-    alert("whatsapp://send?text="+msgurl);
+    */
+    	var msg = takeAlookAt +" http://www.buscamapas.com/mapas/"+GEO_TABLE+"/"+data.friendly_url;
+    	var msgurl = encodeURIComponent(msg);
+    	
+    	var whatsappurl = "whatsapp://send?text="+msgurl;
+    	
+    	 window.plugins.webintent.startActivity(
+    		{ 
+    	  		action: window.plugins.webintent.ACTION_VIEW, 
+    	  		url: whatsappurl
+    	 }, 
+    	 function() {}, 
+    	 function(errorMsg) {
+    	     //console.log('Failed to startActivity     errorMsg=' + errorMsg); 
+    	     launchMarketForWhatsApp();
+    	  } 
+    	 ); 
 }
+
+function launchMarketForWhatsApp() { 
+	 window.plugins.webintent.startActivity(
+	 { 
+	  	action: window.plugins.webintent.ACTION_VIEW, 
+	  	url: 'market://details?id=com.whatsapp' 
+	 }, 
+	 function() {}, 
+	 function(errorMsg) {
+	     console.log('Failed to startActivity     errorMsg=' + errorMsg); 
+	  } 
+	); 
+} 
 </script>
 </head>
 
