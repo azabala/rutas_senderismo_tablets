@@ -134,6 +134,7 @@ function initAd(){
 }
 
 function shareOnWhatsapp(){
+	alert("paso por aquí");
 	gaPlugin.trackEvent( sucessHandler, errorHandler, "Button", "Click", "whatsapp_mapa", 1);
 	var msg = takeAlookAt +" http://www.buscamapas.com/mapas/"+GEO_TABLE+"/"+data.friendly_url;
     var msgurl = encodeURIComponent(msg);
@@ -142,6 +143,7 @@ function shareOnWhatsapp(){
     }catch(e){
     	alert(e.message);
     }
+    alert("terminamos la llamada a shareonwhatsapp");
 }
 </script>
 </head>
