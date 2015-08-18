@@ -264,6 +264,8 @@ function initSearchMaps(){
 								img = "img/map-icons/country.png";
 							}else if(type == 'ciudad'){
 								img = "img/map-icons/bigcity.png";
+							}else if(type == 'espacio-natural'){
+								img = "img/map-icons/forest2.png";
 							}
 
 							html += "<li onclick='$(\"#search-criteria\").val($(this).text());$(\"#autocomplete-results\").hide(true)' class=''><a href='#search-maps-results'><img src='"+img+"' class='ui-li-icon' />" + toponym + "</a></li>";
